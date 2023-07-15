@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prsonal-Portfolio-Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1d70844ba9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Certifications</a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Erram Sndeep </span></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------ABOUT---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>"Hi, my name is Erram Sandeep Iam from warangal.and I'm passionate about using technology to solve real-world <br>problems. Recently completed an internship as a Data Analyst in SR Cognition centre at SR University Warangal <br> My
+                        role involves Analysing Data by using some statistical techniques. And i need to visualize the results<br> so it can be easily understandable and I really enjoy the problem-solving aspect. In the future, I hope to continue honing
+                        my skills as a Data Analyst and eventually transition into a IT or Software role As Team Lead.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>SQL</span><br>Data Cleaning & Extract, Transform and Load(ETL) Process</li>
+                            <li><span>Python</span><br>exploratory Data Analysis (EDA) & Web Scraping, Data Visualization, Machine Learning (Basics)</li>
+                            <li><span>Tableau,Power Bi</span><br>Data Visualization and Comunication, Data intigration with (ETL) Process</li>
+                            <li><span>R</span><br>Statistics and Regression modelling</li>
+                            <li><span>MS Office</span><br>Advamced excel formulas and Functions, MS Access, Power Point & Word</li>
+                            <li><span>HTML & CSS</span><br>(BASICS)</li>
+                            <li><span>Photoshop & Premier Pro</span><br>Object Selection, Content Aware Fill, Transions & Effects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data Analyst &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SR Cognition Centre | Warangal | From Dec-2022 To Mar-2023</span><br>•
+                                &nbsp;Collaborated with 2 AI & ML engineers and 1 cognitive science professor to analyse and visualize<br> their experiment results (Error data) of human brain.<br> • &nbsp;Developed a visually impactful Representation
+                                in MATLAB to prove does moving object shows any effect on visual working memory recall or not with plotting Ploting the Results We have to show the outcomes.<br> • &nbsp;Contributed our statistical analysis results and
+                                our abstract for publication and to show case in the ECVP (European Conference on Visual Perception) conference.</li>
+                            <li><span>Marketing & Promotion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Googee Properties | Hyderabd | From Nov-2022 To Dec-2022</span><br>• Marketing by
+                                talking to the customers, promoting the company by attending property exhibitions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MBA (Business Analytics) | 7.5 CGPA</span><br>Busines
+                                Analytics, Python, Data Mining & Warehousing, Business Intelligence, R Programing, Data Visualization</li>
+                            <li><span>2018-2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B.com (Computers) | 6.4 CGPA</span><br>Infromation
+                                Technology, C-Languge, C++(oops), HTML & CSS, Statistics </li>
+                            <li><span>2016-2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CEC | 456 Marks</span><br>Civics,
+                                Economics, Comerce </li>
+                            <li><span>2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SSC | 7.3 CGPA</span><br>Comon
+                                Studies Social, Science, Chemistry, Phisics And Maths, Computers</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Projects------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> My Projects </h1>
+            <div class="projects-list">
+
+
+                <a href="https://app.powerbi.com/groups/me/reports/b570ebf3-5f8f-4cde-94ed-e9727742287a/ReportSection">
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2> Power Bi</h2>
+                        <p> Sales Insights Dashboard</p>
+                    </div>
+                </a>
+                <a href="https://public.tableau.com/app/profile/erram.sandeep/viz/NetflixAnalysisDashboard_16857781313380/Dashboard1">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-chart-pie"></i>
+                        <h2>Tableau</h2>
+                        <p> Netflix Analysis Dashboard</p>
+                    </div>
+                </a>
+                <a href="https://www.kaggle.com/code/erramsandeep/spotify-eda-project">
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python</h2>
+                        <p> Spotify Exploratory Data Analysis</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------Certifications------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Certifications </h1>
+            <div class="certifications-list">
+                <div class="certifications">
+                    <img src="Google.png">
+                    <div class="layer">
+                        <h3>Google</h3>
+                        <p>Data Analytics Proffesional Certificate</p>
+                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/FNNUXTBKPJUA"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Veiw Certificate</p>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <img src="Google.png">
+                    <div class="layer">
+                        <h3>Google</h3>
+                        <p>Business Intelligence Proffesional Certificate</p>
+                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/B64M9YMQ32VY"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Veiw Certificate</p>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <img src="macquarie.jpg">
+                    <div class="layer">
+                        <h3>Macqurie University</h3>
+                        <p>Excel Specialization for Data Analytics and Data Visualization </p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/6GTKAGRCZTR2"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <p>Veiw Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------- Contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p>&nbsp;for Freelancing</p>
+                    <p><i class="fa-solid fa-paper-plane"></i> erramsandeep19@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9346023531</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/erram-sandeep-667765248/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.kaggle.com/erramsandeep"><i class="fa-brands fa-kaggle"></i></a>
+                        <a href="https://github.com/ERRM-SANDEEP-93460"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sandeep_erram_1919/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="ERRAM SANDEEP CV.pdf" download class="btn">Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright @ Erram Sandeep | All Rights are Reserved&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-check"></i></i>
+            </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbycyCXNQJaBQfUDiZpjkr2IdzVb1emo0Jr09_Gu3tK-1JVEjXm5ODO_MjpM9P_69XKG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Massage sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML == ""
+                    }, 5)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
