@@ -440,6 +440,9 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0.4s;
     }
+    av ul li a {
+        color: black;
+    }
     nav ul li {
         display: block;
         margin: 25px;
